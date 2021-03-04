@@ -1,5 +1,5 @@
 module.exports = {
-  someSidebar: {
+  Docs: {
     Guide: [
       'guide/hello',
     ],

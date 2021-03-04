@@ -1,13 +1,13 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: 'https://liihom.github.io',
+  baseUrl: '/my-blog/',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'liihom', // Usually your GitHub org/user name.
+  projectName: 'my-blog', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Site',
@@ -17,12 +17,16 @@ module.exports = {
       },
       items: [
         {
-          to: '/docs/guide/hello',
+          to: 'docs/guide/hello/',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'docs/practice/html', label: 'Practice', position: 'left'},
+        {
+          to: 'docs/practice/html/',
+          label: 'Practice',
+          position: 'left'
+        },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -34,19 +38,6 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [
